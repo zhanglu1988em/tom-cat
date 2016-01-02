@@ -13,6 +13,7 @@
 		A65BC6821C379F2700D18034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65BC6801C379F2700D18034 /* Main.storyboard */; };
 		A65BC6841C379F2700D18034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65BC6831C379F2700D18034 /* Assets.xcassets */; };
 		A65BC6871C379F2700D18034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65BC6851C379F2700D18034 /* LaunchScreen.storyboard */; };
+		A65BC68F1C379F4600D18034 /* tom.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65BC68E1C379F4600D18034 /* tom.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A65BC6831C379F2700D18034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65BC6861C379F2700D18034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A65BC6881C379F2700D18034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65BC68E1C379F4600D18034 /* tom.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tom.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				A65BC6801C379F2700D18034 /* Main.storyboard */,
 				A65BC6831C379F2700D18034 /* Assets.xcassets */,
 				A65BC6851C379F2700D18034 /* LaunchScreen.storyboard */,
+				A65BC68E1C379F4600D18034 /* tom.plist */,
 				A65BC6881C379F2700D18034 /* Info.plist */,
 				A65BC6771C379F2700D18034 /* Supporting Files */,
 			);
@@ -139,6 +142,7 @@
 				A65BC6871C379F2700D18034 /* LaunchScreen.storyboard in Resources */,
 				A65BC6841C379F2700D18034 /* Assets.xcassets in Resources */,
 				A65BC6821C379F2700D18034 /* Main.storyboard in Resources */,
+				A65BC68F1C379F4600D18034 /* tom.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
