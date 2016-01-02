@@ -43,6 +43,11 @@
      [self perfAnimationWithName:button.currentTitle :button.tag];
 }
 
+/*
+ imageNamed:  存放比较常用的图片 ，有系统负责回收内存，不能把不常用，并且耗内存的图片存放到 Assets.xcassets 里面，否则pathForResource 无法找到图片
+ imageWithContentsOfFile: 适合临时用，非常耗内存。
+ 
+ */
 -(void) perfAnimationWithName :(NSString*)name :(int) imageCount
 {
     
@@ -52,12 +57,19 @@
     NSMutableArray *arryM = [NSMutableArray array];
     for (int i = 0; i < imageCount;  ++i ) {
         NSString *imageName = [NSString stringWithFormat:@"%@_%02d.jpg",name,i];
-        [arryM addObject:[UIImage imageNamed:imageName]];
+        //[arryM addObject:[UIImage imageNamed:imageName]];
+        NSString *path = [[NSBundle mainBundle] pathForResource:imageName ofType:nil];
+        [arryM addObject:[UIImage imageWithContentsOfFile:path]];
     }
+    
+#if 1 // 首位动画
     [self.imageView setAnimationImages:arryM];
     [self.imageView setAnimationDuration: imageCount * 0.075];
     [self.imageView setAnimationRepeatCount:1];
     [self.imageView startAnimating];
+    
+    [self.imageView performSelector:@selector(setAnimationImages:) withObject:nil afterDelay:self.imageView.animationDuration ];
+#endif
 }
 
 @end
