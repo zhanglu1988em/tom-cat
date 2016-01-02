@@ -20,17 +20,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry_00" translatesAutoresizingMaskIntoConstraints="NO" id="w4k-xL-9bd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX8-fa-NlO">
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX8-fa-NlO">
                                 <rect key="frame" x="0.0" y="420" width="60" height="60"/>
-                                <state key="normal" backgroundImage="eat"/>
+                                <state key="normal" title="eat" backgroundImage="eat">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="eatBird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DFx-Ma-gEM"/>
+                                    <action selector="actionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afn-3p-c1Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4F-TJ-ucH">
+                            <button opaque="NO" tag="80" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4F-TJ-ucH">
                                 <rect key="frame" x="57" y="73" width="206" height="166"/>
+                                <state key="normal" title="knockout">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="knockout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fv3-sd-CUY"/>
+                                    <action selector="actionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z76-r3-Gy8"/>
                                 </connections>
                             </button>
                         </subviews>

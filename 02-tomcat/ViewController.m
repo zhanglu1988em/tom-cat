@@ -29,7 +29,6 @@
 
 - (IBAction)knockout:(UIButton *)sender {
     [self perfAnimationWithName:@"knockout" :81];
-    
 }
 
 - (IBAction)eatBird:(id)sender {
@@ -37,6 +36,11 @@
     [self perfAnimationWithName:@"eat" :40];
     
     
+}
+
+-(IBAction) actionAnimation:(UIButton*) button
+{
+     [self perfAnimationWithName:button.currentTitle :button.tag];
 }
 
 -(void) perfAnimationWithName :(NSString*)name :(int) imageCount
